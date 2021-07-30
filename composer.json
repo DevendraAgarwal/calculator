@@ -8,6 +8,13 @@
             "Sirdevendra\\Calculator\\": "src/"
         }
     },
+    "extra":{
+        "laravel":{
+            "providers":[
+                "Sirdevendra\\Calculator\\CalculatorServiceProvider"
+            ]
+        }
+    },
     "authors": [
         {
             "name": "Devendra Agarwal",
