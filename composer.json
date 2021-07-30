@@ -1,0 +1,31 @@
+{
+    "name": "sirdevendra/calculator",
+    "description": "This Package Contains Basic Calculator Operations Methods",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Sirdevendra\\Sirdevendra\\": "src/"
+        }
+    },
+    "extra":{
+        "laravel":{
+            "providers":[
+                "Sirdevendra\\Sirdevendra\\CalculatorServiceProvider"
+            ]
+        }
+    },
+    "authors": [
+        {
+            "name": "Devendra Agarwal",
+            "email": "a.devendra@live.in"
+        }
+    ],
+    "scripts": {
+        "post-autoload-dump": [
+            "@php artisan vendor:publish --provider='Sirdevendra\\Calculator\\CalculatorServiceProvider' --tag=public --force"
+        ]
+    },
+    "minimum-stability": "dev",
+    "require": {}
+}
