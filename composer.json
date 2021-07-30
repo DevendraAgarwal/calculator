@@ -5,13 +5,13 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Sirdevendra\\Sirdevendra\\": "src/"
+            "Sirdevendra\\Calculator\\": "src/"
         }
     },
     "extra":{
         "laravel":{
             "providers":[
-                "Sirdevendra\\Sirdevendra\\CalculatorServiceProvider"
+                "Sirdevendra\\Calculator\\CalculatorServiceProvider"
             ]
         }
     },
@@ -21,11 +21,6 @@
             "email": "a.devendra@live.in"
         }
     ],
-    "scripts": {
-        "post-autoload-dump": [
-            "@php artisan vendor:publish --provider='Sirdevendra\\Calculator\\CalculatorServiceProvider' --tag=public --force"
-        ]
-    },
     "minimum-stability": "dev",
     "require": {}
 }
